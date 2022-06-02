@@ -1626,3 +1626,9 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.logoFooter {
+  max-width: 100%;
+  height: auto;
+  width: 55px;
+}
