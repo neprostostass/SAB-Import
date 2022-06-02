@@ -426,14 +426,14 @@ h6 {
 }
 
 #hero h2 {
-  color: #fff;
+  color: #ffb03b;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
 }
 
 #hero h2 span {
-  color: #ffb03b;
+  color: #e72828;
 }
 
 #hero p {
