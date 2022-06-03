@@ -839,12 +839,12 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #6c665c;
+  color: #ee3232;
 }
 
 .why-us .box p {
-  color: #aaaaaa;
-  font-size: 15px;
+  color: #3d3d3d;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 }
@@ -1631,4 +1631,44 @@ section {
   max-width: 100%;
   height: auto;
   width: 55px;
+}
+
+.workingDirection {
+  padding-top: 30px;
+}
+
+.gridWorkingDirection {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+@media (max-width: 767px) {
+  .gridWorkingDirection {
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+  }
+
+  /* .membersBox {
+    display: grid;
+    justify-content: center;
+  } */
+
+
+  .membersBox h4 {
+    max-width: 265px;
+    text-align: center;
+  }
+
+}
+
+.gridWorkingDirection p {
+  width: 77%;
+}
+
+.textWhy {
+  font-size: 20px;
+}
+
+.membersBox {
+  padding: 10px 30px !important;
 }
