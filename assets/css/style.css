@@ -663,8 +663,8 @@ section {
 }
 
 .about .content p {
-  font-size: 15px;
-  color: #848484;
+  font-size: 21px;
+  color: #ffb03b;
 }
 
 .about .content ul {
@@ -679,6 +679,7 @@ section {
 .about .content ul li {
   position: relative;
   padding-left: 26px;
+  font-size: 19px;
 }
 
 .about .content ul i {
@@ -1656,7 +1657,6 @@ section {
     justify-content: center;
   } */
 
-
   .membersBox h4 {
     max-width: 265px;
     text-align: center;
@@ -1674,4 +1674,20 @@ section {
 
 .membersBox {
   padding: 10px 30px !important;
+}
+
+.mapBox {
+  border-radius: 50px;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+.mapDiv img {
+  width: 100%;
+}
+
+.box.mapBox:hover {
+  background: #384179;
+  transform: perspective(10px) scale3d(1.1, 1.1, 1.1);
 }
