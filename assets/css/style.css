@@ -1677,7 +1677,6 @@ section {
 }
 
 .mapBox {
-  border-radius: 50px;
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -1688,6 +1687,7 @@ section {
 }
 
 .box.mapBox:hover {
+  border-radius: 50px;
   background: #384179;
-  transform: perspective(10px) scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.05, 1.05, 1.05);
 }
