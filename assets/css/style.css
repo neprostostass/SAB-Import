@@ -856,6 +856,26 @@ section {
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
+.why-us .box.noHover {
+  background: #e7e7e7;
+}
+
+.why-us .box.noHover:hover {
+  background: #e7e7e7;
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+.why-us .box.noHover:hover span,
+.why-us .box.noHover:hover p {
+  color: #3d3d3d;
+}
+
+.why-us .box.noHover:hover h4 {
+  color: #ee3232;
+}
+
 .why-us .box:hover span,
 .why-us .box:hover p {
   color: #fff;
@@ -1643,7 +1663,31 @@ section {
 
 .gridWorkingDirection {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.portfolioCompLogoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoCompany1 img,
+.logoCompany2 img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.logoCompany1:hover,
+.logoCompany2:hover {
+  position: relative;
+  top: 1px;
+  border-radius: 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
 @media (max-width: 767px) {
@@ -1652,21 +1696,23 @@ section {
     gap: 20px;
   }
 
-  /* .membersBox {
-    display: grid;
-    justify-content: center;
-  } */
+  .portfolioCompLogoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .membersBox h4 {
     max-width: 265px;
     text-align: center;
   }
-
 }
 
 .gridWorkingDirection p {
   width: 77%;
 }
+
+/* .gridWorkingDirection.portfolioGrid p {
+  width: unset;
+} */
 
 .textWhy {
   font-size: 20px;
@@ -1690,4 +1736,22 @@ section {
   border-radius: 50px;
   background: #384179;
   transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.hrGridPortfolio {
+  height: 2px !important;
+}
+
+.portfolioTitle p {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.textDirection.portfolioText {
+  margin-top: 0px !important;
+  margin-bottom: 35px !important;
+}
+
+.textFooter {
+  font-size: 16px !important;
 }
