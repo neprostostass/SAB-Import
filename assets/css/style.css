@@ -1697,6 +1697,19 @@ section {
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
+.trademark.first {
+  padding-top: 80px;
+  text-align: center;
+  color: #ffb13be5;
+}
+
+.trademark {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #ffb13be5;
+}
+
 .wrapperTwoViews {
   padding: 10px 0 30px;
   text-align: center;
@@ -1710,10 +1723,14 @@ section {
   color: #fff;
 }
 
+.row {
+  justify-content: center;
+}
+
 .gridRow {
-  padding-top: 60px;
   display: grid !important;
   grid-template-columns: repeat(auto-fill, 380px);
+  align-items: center;
   justify-items: center;
   justify-content: center;
 }
