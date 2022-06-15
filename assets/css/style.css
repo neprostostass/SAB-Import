@@ -131,6 +131,10 @@ h6 {
   max-height: 40px;
 }
 
+.fontS {
+  font-size: 1.2rem;
+}
+
 /*--------------------------------------------------------------
 # Book a table button Menu
 --------------------------------------------------------------*/
@@ -437,7 +441,7 @@ h6 {
 }
 
 #hero p {
-  width: 80%;
+  width: 100%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
@@ -529,9 +533,6 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-  #hero p {
-    width: 50%;
-  }
 
   #hero .carousel-control-prev,
   #hero .carousel-control-next {
@@ -559,7 +560,7 @@ section {
   margin: 15px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  color: #5f5950;
+  color: rgb(186, 180, 169)
 }
 
 .section-title h2 span {
@@ -1244,6 +1245,10 @@ section {
   position: relative;
 }
 
+.colorText {
+  color: #fff;
+}
+
 .chefs::before {
   content: "";
   position: absolute;
@@ -1251,7 +1256,9 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: rgba(0, 0, 0, 0.7);
   z-index: 9;
 }
 
@@ -1690,7 +1697,51 @@ section {
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
+.wrapperTwoViews {
+  padding: 10px 0 30px;
+  text-align: center;
+}
+
+.book {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ffb13be5;
+  color: #fff;
+}
+
+.gridRow {
+  padding-top: 60px;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, 380px);
+  justify-items: center;
+  justify-content: center;
+}
+
+.member-info.off {
+  display: none;
+}
+
+.hrItems {
+  height: 8px !important;
+  background-color: #fff;
+  width: 100%;
+  margin: 60px auto;
+
+}
+
+.hrItems.on {
+  height: 6px !important;
+  width: 75%;
+  margin: 0 auto;
+}
+
 @media (max-width: 767px) {
+
+  .wrapperTwoViews {
+    display: none;
+  }
+
   .gridWorkingDirection {
     grid-template-columns: repeat(1, auto);
     gap: 20px;
@@ -1704,15 +1755,13 @@ section {
     max-width: 265px;
     text-align: center;
   }
+
+
 }
 
 .gridWorkingDirection p {
   width: 77%;
 }
-
-/* .gridWorkingDirection.portfolioGrid p {
-  width: unset;
-} */
 
 .textWhy {
   font-size: 20px;
@@ -1734,7 +1783,7 @@ section {
 
 .box.mapBox:hover {
   border-radius: 50px;
-  background: #384179;
+  background: #ffb13be5;
   transform: scale3d(1.05, 1.05, 1.05);
 }
 
