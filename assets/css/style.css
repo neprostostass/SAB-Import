@@ -1274,7 +1274,18 @@ section {
 }
 
 .chefs .member .pic {
+  padding-bottom: 16%;
   overflow: hidden;
+}
+
+.pic {
+  transition: .5s transform;
+}
+
+.pic:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: .5s transform;
 }
 
 .chefs .member .member-info {
@@ -1282,21 +1293,37 @@ section {
   bottom: -80px;
   left: 20px;
   right: 20px;
-  background: #fff;
   padding: 20px 0;
-  color: #433f39;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.chefs .member .member-info:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  transition: 0.5s ease-in-out;
 }
 
 .chefs .member h4 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: .8rem !important;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #6c665c;
+  color: #fff;
+  font-style: italic;
   position: relative;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1341,11 +1368,12 @@ section {
   }
 }
 
-@media (min-width: 1024px) {
-  .chefs {
-    background-attachment: fixed;
-  }
+/* @media (min-width: 1024px) { */
+.chefs {
+  background-attachment: fixed;
 }
+
+/* } */
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1725,6 +1753,10 @@ section {
 
 .row {
   justify-content: center;
+}
+
+.pb-5 {
+  padding-bottom: 6rem !important;
 }
 
 .gridRow {
