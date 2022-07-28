@@ -214,7 +214,9 @@ h6 {
 }
 
 .navbar .dropdown ul {
-  display: block;
+  /* display: block; */
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   position: absolute;
   left: 24px;
   top: calc(100% + 30px);
@@ -1286,6 +1288,10 @@ section {
   cursor: pointer;
   transform: scale(1.02);
   transition: .5s transform;
+}
+
+.rowCheckFlexEnd {
+  align-items: flex-end;
 }
 
 .chefs .member .member-info {
