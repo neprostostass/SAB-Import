@@ -214,9 +214,9 @@ h6 {
 }
 
 .navbar .dropdown ul {
-  /* display: block; */
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: block;
+  /* display: grid;
+  grid-template-columns: repeat(2, auto); */
   position: absolute;
   left: 24px;
   top: calc(100% + 30px);
@@ -1237,6 +1237,10 @@ section {
   transform: scale(1.1);
 }
 
+.noneView {
+  background-color: #fff0 !important;
+}
+
 /*--------------------------------------------------------------
 # Chefs
 --------------------------------------------------------------*/
@@ -1374,12 +1378,574 @@ section {
   }
 }
 
-/* @media (min-width: 1024px) { */
 .chefs {
   background-attachment: fixed;
 }
 
-/* } */
+/*--------------------------------------------------------------
+# Second Section
+--------------------------------------------------------------*/
+.secondSection {
+  background: url("../img/secondSection-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.colorText {
+  color: #fff;
+}
+
+.secondSection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+
+.secondSection .container {
+  position: relative;
+  z-index: 10;
+}
+
+.secondSection .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.secondSection .member .pic {
+  padding-bottom: 16%;
+  overflow: hidden;
+}
+
+.pic {
+  transition: .5s transform;
+}
+
+.pic:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: .5s transform;
+}
+
+.rowCheckFlexEnd {
+  align-items: flex-end;
+}
+
+.secondSection .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  padding: 20px 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.secondSection .member .member-info:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  transition: 0.5s ease-in-out;
+}
+
+.secondSection .member h4 {
+  font-weight: 600;
+  font-size: .8rem !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.secondSection .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffcf88;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.secondSection .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.secondSection .member .social {
+  margin-top: 15px;
+}
+
+.secondSection .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+.secondSection .member .social a:hover {
+  color: #ffb03b;
+}
+
+.secondSection .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .secondSection .member {
+    margin-bottom: 110px;
+  }
+}
+
+.secondSection {
+  background-attachment: fixed;
+}
+
+/*--------------------------------------------------------------
+# Third Section
+--------------------------------------------------------------*/
+.thirdSection {
+  background: url("../img/thirdSection-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.colorText {
+  color: #fff;
+}
+
+.thirdSection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+
+.thirdSection .container {
+  position: relative;
+  z-index: 10;
+}
+
+.thirdSection .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.thirdSection .member .pic {
+  padding-bottom: 16%;
+  overflow: hidden;
+}
+
+.pic {
+  transition: .5s transform;
+}
+
+.pic:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: .5s transform;
+}
+
+.rowCheckFlexEnd {
+  align-items: flex-end;
+}
+
+.thirdSection .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  padding: 20px 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.thirdSection .member .member-info:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  transition: 0.5s ease-in-out;
+}
+
+.thirdSection .member h4 {
+  font-weight: 600;
+  font-size: .8rem !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.thirdSection .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffcf88;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.thirdSection .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.thirdSection .member .social {
+  margin-top: 15px;
+}
+
+.thirdSection .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+.thirdSection .member .social a:hover {
+  color: #ffb03b;
+}
+
+.thirdSection .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .thirdSection .member {
+    margin-bottom: 110px;
+  }
+}
+
+.thirdSection {
+  background-attachment: fixed;
+}
+
+/*--------------------------------------------------------------
+# Fourth Section
+--------------------------------------------------------------*/
+.fourthSection {
+  background: url("../img/Fourth-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.colorText {
+  color: #fff;
+}
+
+.fourthSection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+
+.fourthSection .container {
+  position: relative;
+  z-index: 10;
+}
+
+.fourthSection .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.fourthSection .member .pic {
+  padding-bottom: 16%;
+  overflow: hidden;
+}
+
+.pic {
+  transition: .5s transform;
+}
+
+.pic:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: .5s transform;
+}
+
+.rowCheckFlexEnd {
+  align-items: flex-end;
+}
+
+.fourthSection .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  padding: 20px 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.fourthSection .member .member-info:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  transition: 0.5s ease-in-out;
+}
+
+.fourthSection .member h4 {
+  font-weight: 600;
+  font-size: .8rem !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.fourthSection .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffcf88;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.fourthSection .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.fourthSection .member .social {
+  margin-top: 15px;
+}
+
+.fourthSection .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+.fourthSection .member .social a:hover {
+  color: #ffb03b;
+}
+
+.fourthSection .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .fourthSection .member {
+    margin-bottom: 110px;
+  }
+}
+
+.fourthSection {
+  background-attachment: fixed;
+}
+
+/*--------------------------------------------------------------
+# Fifth Section
+--------------------------------------------------------------*/
+.fifthSection {
+  background: url("../img/Fifth-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.colorText {
+  color: #fff;
+}
+
+.fifthSection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* background: rgba(255, 255, 255, 0.8); */
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+
+.fifthSection .container {
+  position: relative;
+  z-index: 10;
+}
+
+.fifthSection .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.fifthSection .member .pic {
+  padding-bottom: 16%;
+  overflow: hidden;
+}
+
+.pic {
+  transition: .5s transform;
+}
+
+.pic:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: .5s transform;
+}
+
+.rowCheckFlexEnd {
+  align-items: flex-end;
+}
+
+.fifthSection .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  padding: 20px 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.fifthSection .member .member-info:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  transition: 0.5s ease-in-out;
+}
+
+.fifthSection .member h4 {
+  font-weight: 600;
+  font-size: .8rem !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.fifthSection .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #ffcf88;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.fifthSection .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.fifthSection .member .social {
+  margin-top: 15px;
+}
+
+.fifthSection .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+.fifthSection .member .social a:hover {
+  color: #ffb03b;
+}
+
+.fifthSection .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .fifthSection .member {
+    margin-bottom: 110px;
+  }
+}
+
+.fifthSection {
+  background-attachment: fixed;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
