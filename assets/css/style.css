@@ -891,6 +891,7 @@ section {
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
+
 .menu #menu-flters {
   padding: 0;
   margin: 0 auto 0 auto;
@@ -1298,6 +1299,7 @@ section {
 
 .colorText {
   color: #fff;
+  /* color: #474139 !important; */
 }
 
 .chefs::before {
