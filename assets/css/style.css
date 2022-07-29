@@ -271,7 +271,7 @@ h6 {
   visibility: visible;
 }
 
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
@@ -279,7 +279,7 @@ h6 {
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
-}
+} */
 
 /**
 * Mobile Navigation 
@@ -1237,6 +1237,26 @@ section {
   transform: scale(1.1);
 }
 
+.rowCheck {
+  align-items: flex-end;
+}
+
+.pic img {
+  width: 30% !important;
+}
+
+.picBig img {
+  width: 70% !important;
+}
+
+.picMiddleBig img {
+  width: 60% !important;
+}
+
+.picMiddle img {
+  width: 50% !important;
+}
+
 .logoMain {
   width: 60%;
 }
@@ -1309,10 +1329,6 @@ section {
   cursor: pointer;
   transform: scale(1.02);
   transition: .5s transform;
-}
-
-.rowCheckFlexEnd {
-  align-items: flex-end;
 }
 
 .chefs .member .member-info {
@@ -1452,10 +1468,6 @@ section {
   transition: .5s transform;
 }
 
-.rowCheckFlexEnd {
-  align-items: flex-end;
-}
-
 .secondSection .member .member-info {
   position: absolute;
   bottom: -80px;
@@ -1591,10 +1603,6 @@ section {
   cursor: pointer;
   transform: scale(1.02);
   transition: .5s transform;
-}
-
-.rowCheckFlexEnd {
-  align-items: flex-end;
 }
 
 .thirdSection .member .member-info {
@@ -1734,10 +1742,6 @@ section {
   transition: .5s transform;
 }
 
-.rowCheckFlexEnd {
-  align-items: flex-end;
-}
-
 .fourthSection .member .member-info {
   position: absolute;
   bottom: -80px;
@@ -1873,10 +1877,6 @@ section {
   cursor: pointer;
   transform: scale(1.02);
   transition: .5s transform;
-}
-
-.rowCheckFlexEnd {
-  align-items: flex-end;
 }
 
 .fifthSection .member .member-info {
@@ -2285,7 +2285,7 @@ section {
 
 .gridWorkingDirection {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
 }
 

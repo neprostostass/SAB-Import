@@ -239,37 +239,37 @@
     }
   });
 
-  var trigger = document.querySelector(".book");
-  var rowCheck = document.querySelectorAll(".rowCheck");
-  var memberInfo = document.querySelectorAll(".member-info");
-  var cardItem = document.querySelectorAll(".cardItem");
-  var hrItems = document.querySelectorAll(".hrItems");
+  // var trigger = document.querySelector(".book");
+  // var rowCheck = document.querySelectorAll(".rowCheck");
+  // var memberInfo = document.querySelectorAll(".member-info");
+  // var cardItem = document.querySelectorAll(".cardItem");
+  // var hrItems = document.querySelectorAll(".hrItems");
 
-  trigger.addEventListener('click', () => {
+  // trigger.addEventListener('click', () => {
 
-    if (trigger.innerHTML == 'Компактный вид') {
-      trigger.innerHTML = 'Расширенный вид';
-    } else {
-      trigger.innerHTML = 'Компактный вид';
-    }
+  //   if (trigger.innerHTML == 'Компактный вид') {
+  //     trigger.innerHTML = 'Расширенный вид';
+  //   } else {
+  //     trigger.innerHTML = 'Компактный вид';
+  //   }
 
-    for (const row of rowCheck) {
-      row.classList.toggle('gridRow');
-    }
+  //   for (const row of rowCheck) {
+  //     row.classList.toggle('gridRow');
+  //   }
 
-    for (const member of memberInfo) {
-      member.classList.toggle('off');
-    }
+  //   for (const member of memberInfo) {
+  //     member.classList.toggle('off');
+  //   }
 
-    for (const card of cardItem) {
-      card.classList.toggle('pb-5');
-    }
+  //   for (const card of cardItem) {
+  //     card.classList.toggle('pb-5');
+  //   }
 
-    for (const hr of hrItems) {
-      hr.classList.toggle('on');
-    }
+  //   for (const hr of hrItems) {
+  //     hr.classList.toggle('on');
+  //   }
 
-  });
+  // });
 
 
 })()
