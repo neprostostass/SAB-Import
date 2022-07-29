@@ -1257,6 +1257,14 @@ section {
   width: 50% !important;
 }
 
+.pic07l img {
+  width: 28% !important;
+}
+
+.pic05l img {
+  width: 24% !important;
+}
+
 .logoMain {
   width: 60%;
 }
