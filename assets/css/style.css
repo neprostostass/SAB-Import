@@ -1259,7 +1259,7 @@ section {
 }
 
 .pic07l img {
-  width: 28% !important;
+  width: 29% !important;
 }
 
 .pic05l img {
@@ -1286,6 +1286,15 @@ section {
   max-width: unset !important;
   padding: 0 !important;
 }
+
+.logo25 {
+  width: 25%;
+}
+
+.logo13 {
+  width: 13%;
+}
+
 
 /*--------------------------------------------------------------
 # Chefs
